@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* navbar design  */
+
+.wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(/IMAGES/pexels-photo-1125850.jpeg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.navbar {
+    height: 80px;
+    width: 100%;
+    background: rgba(16, 16, 16, 0.864);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+    padding: 22px 27px;
+    margin-left: 60px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 0px 30px 0px 30px;
+    margin-right: 20px;
+    /* border: 1px solid grey; */
+    border-radius: 15px;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+
+    background-color: rgb(65, 121, 63);
+    /* color: white; */
+    border-radius: 15px;
+    padding-left: 30px;
+    transition: all 0.3s ease;
+}
+
+
+/* flipbox */
+#heading {
+    /* border: 2px solid grey;
+    border-radius: 2px;
+    padding: 10px; */
+    font-size: 40px;
+    color: rgba(239, 242, 244, 0.874);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 0 8px 8px black;
+    text-align: center;
+    margin-top: 20px;
+}
+img {
+    width: 100%;
+    opacity: 1;
+
+}
+
+.img-radius {
+
+    border-radius: 5px;
+    /* box-shadow: 5px 5px 5px rgba(255, 254, 254, 0.5); */
+    /* box-shadow: 0px 0px 15px lightgrey; */
+}
+
+#flex-container {
+
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.flipbox {
+    background-color: transparent;
+    width: 350px;
+    height: 233px;
+    border: 1px solid #f1f1f1;
+    border-style: none;
+
+    border-radius: 5px;
+    margin: auto;
+    margin: 20px;
+    text-align: center;
+
+
+}
+
+.flipbox-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 2px 5px 5px -1px;
+}
+
+
+
+.flipbox-front,
+.flipbox-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.flipbox-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 5px;
+}
+
+
+
+.over-text {
+
+    color: white;
+    background: black;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    height: 25px;
+
+}
+form{
+    border: 2px solid yellow;
+}
+.p-front {
+
+    text-align: justify;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .last .abc img {
+    width: 50px;
+}
+
+.abc {
+    border-right: 2px solid grey;
+    padding: 40px;
+}
+
+.abc a {
+    text-decoration: none;
+}
+
+.abc a h2 {
+    color: lightgray;
+    border-bottom: 2px solid black;
+}
+
+.abc a h2:hover {
+    color: #ff8f8f;
+}
+
+.abc h3 {
+    color: bisque;
+}
+
+#abc2 {
+    border-right: none;
+}
+
+.para2 {
+    color: white;
+    letter-spacing: 0.5px;
+} */
+
+
+/* footer */
+
+footer {
+    background-color: rgb(5, 0, 36);
+    width: 100%;
+}
+
+.footer-heading {
+    color: white;
+}
+
+.foot1 {
+    
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.ft11,
+.ft21 {
+    padding-top: 15px;
+}
+
+.ft11 ul {
+    text-align: justify;
+    padding-top: 8px;
+}
+
+.ft11 ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+.ft11 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-para1 {
+    color: white;
+    text-align: justify;
+    padding-top: 8px;
+    line-height: 27px;
+}
+
+.ft13 ul {
+    text-align: justify;
+    padding-top: 8px;
+}
+
+.ft13 ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+.ft13 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.foot2 {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.app-logo {
+    width: 180px;
+    padding: 8px;
+}
+
+.social-media {
+    display: flex;
+    padding-top: 8px;
+}
+
+.sm-links {
+    width: 50px;
+    padding: 5px 8px;
+}
+
+.endpara {
+    padding-bottom: 8px;
+    background-color: rgb(5, 0, 36);
+    color: white;
+    text-align: center;
+}
+
+/* responsive */
+
+@media only screen and (max-width:1480px) {
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .navbar ul {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:1160px) {
+    .navbar {
+
+        position: static;
+    }
+
+    .navbar ul {
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0px;
+    }
+
+    .logo {
+        width: 175px;
+        height: auto;
+        padding: 22px 27px;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .btn1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 130px;
+        height: auto;
+    }
+
+    .last {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .last .abc {
+        border: none;
+    }
+
+    .abc a h2 {
+        color: #ff8f8f;
+        border-bottom: none;
+    }
+
+    #sec {
+
+        width: 60%;
+        height: auto;
+        margin: 19px auto 0px auto;
+        text-align: center;
+    }
+
+    .last .abc {
+        border-bottom: 2px solid grey;
+    }
+
+    #abc2 {
+        border: none;
+    }
+
+}
+
+@media only screen and (max-width:880px) {
+    #sec {
+
+        width: 100%;
+
+    }
+}
+
+@media only screen and(max-width:830px) {
+    .main p {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .foot1 {
+
+        grid-template-columns: auto;
+        grid-row-gap: 30px;
+    }
+
+    .ft11 {
+        margin: 5px auto;
+    }
+
+    .foot2 {
+        
+        grid-template-columns: auto;
+        grid-row-gap: 30px;
+    }
+
+    .ft21 {
+        margin: 5px auto;
+    }
+}

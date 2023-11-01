@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.registration{
+    border: 2px solid #ffdada;
+    border-radius: 8px;
+    width:50%;
+    height: 640px;
+    margin: 20px auto;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    background-color: rgba(13, 95, 14, 0.22);
+}
+.d-head1{
+    margin: 10px 0px;
+    /* text-align: center; */
+}
+
+.d-head4{
+    margin: 10px 5px;
+}
+.d-para{
+    margin: 8px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.d-head1,.d-head4,.d-para{
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(16, 95, 8);
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+.sub-btn{
+    
+    /* margin: 10px; */
+    margin-left: 158px;
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all;
+}
+.sub-btn:hover{
+    cursor: pointer;
+    background-color: rgb(65, 121, 63);
+    color: white;
+    /* transition-delay: 0.3; */
+    transition-duration: 0.4s;
+}   
+.endpara{
+    background-color:rgb(5, 0, 36);
+}
+
+@media only screen and (max-width:850px)
+{
+    .registration{
+        width: 70%;
+    }
+}
+@media only screen and (max-width:700px)
+{
+    .registration{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:530px)
+{
+    .sub-btn{
+    margin-left: 145px;
+    }
+}
+@media only screen and (max-width:500px)
+{
+    .sub-btn{
+    margin-left: 138px;
+    }
+}
+@media only screen and (max-width:400px)
+{
+    .sub-btn{
+    margin-left: 125px;
+    }
+}
+
+@media only screen and (max-width:600px)
+{
+    .registration{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:450px)
+{
+    .registration{
+        width: 96%;
+    }
+}
